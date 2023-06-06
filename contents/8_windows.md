@@ -12,7 +12,7 @@ While the tool was originally meant to run on [Linux](https://www.linux.org), Ma
 
 ## Using Make on Windows
 
-![windows]({{site.images}}{{page.slug}}/windows.jpg) \
+![windows](./images//windows.jpg) \
 
 Before looking at the different options available, you should know why you want to run Makefiles on Windows in the first place. Or rather, if you're working on Windows, why are you even interested in Makefiles?
 
@@ -22,7 +22,7 @@ As applications and infrastructure become more modern, the cloud is another reas
 
 ### Chocolatey
 
-![chocolatey]({{site.images}}{{page.slug}}/chocolatey.png) \
+![chocolatey](./images//chocolatey.png) \
 
 Linux users have been using package managers for decades, yet they've never gained much traction on Windows. Up until the release of [winget](https://docs.microsoft.com/en-us/windows/package-manager/winget/), the concept of a package manager was never something that was natively included on Windows. Instead, Rob Reynolds started working on an independent package manager back in 2011 that would come to be known as [Chocolatey](https://blog.chocolatey.org/2016/03/celebrating-5-years/). Chocolatey is now widely used on Windows to install packages, and you can use it to install `make` as well.
 
@@ -52,11 +52,11 @@ Historically, one of the most popular ways of running any type of Linux function
 
 To use Cygwin for Makefiles, start by [downloading and installing](https://www.cygwin.com/install.html) Cygwin. During the installation, you'll see a window popping up asking you what packages you want to install. In the top left corner, make sure to select **Full** and then search for `make`.
 
-![Searching for "make"]({{site.images}}{{page.slug}}/Vx2tzwc.png)
+![Searching for "make"](./images//Vx2tzwc.png)
 
 Your search will give you a list of several different packages. You want to choose the one that's labeled just as `make`. Change the dropdown menu where it says **Skip** to the latest version.
 
-![Choosing "make"]({{site.images}}{{page.slug}}/ElSKczz.png)
+![Choosing "make"](./images//ElSKczz.png)
 
 Now you can finish the installation by clicking **Next** in the bottom right corner. Once the installation is done, you can open up Cygwin and verify that `make` has been installed by executing `make --version`.
 
@@ -72,7 +72,7 @@ All in all, if your entire organization uses Windows and you simply want the typ
 
 ### CMake
 
-![cmake]({{site.images}}{{page.slug}}/cmake.jpg) \
+![cmake](./images//cmake.jpg) \
 
 As with NMAKE, [CMake](/blog/using-cmake) is not a direct way to run your Makefiles on Windows. Instead, [CMake](https://cmake.org) is a tool to generate Makefiles, at least on Linux. It works by defining a `CMakeLists.txt` file in the root directory of your application. Once you execute `cmake`, it generates the files you need to build your application, no matter what operating system you're on.
 

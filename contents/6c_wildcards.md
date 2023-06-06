@@ -14,7 +14,7 @@ If you want to see all the code from this tutorial in one place, you can find it
 
 ## How To Use Make
 
-![How to use make]({{site.images}}{{page.slug}}/how.jpg)\
+![How to use make](./images//how.jpg)\
 
 To begin, define a sample application you can use as an example. As any experienced programmer will know, the best example is that of "Hello, World!" This is what it looks like in C:
 
@@ -45,7 +45,7 @@ Now, the basis of the application is done, and it's time to introduce wildcards.
 
 ## Makefile Wildcards
 
-![Makefile Wildcard]({{site.images}}{{page.slug}}/wildcard.png)\
+![Makefile Wildcard](./images//wildcard.png)\
 
 As mentioned in the introduction, when you want your Makefile targets to be flexible, wildcards come into play. Wildcards can be effective in many places but only pick up files matching a pattern. Now, dive deeper into what is possible with wildcards:
 
@@ -92,7 +92,7 @@ This is one of the most common pitfalls in `make`. Now `make` will read the vari
 
 ## Rules With Wildcards
 
-![Rules Wildcard]({{site.images}}{{page.slug}}/rules.png)\
+![Rules Wildcard](./images//rules.png)\
 
 You've now seen some examples of how wildcards can be used inside of Makefiles, but it's also possible to use pattern matching when defining your rules. By defining a rule inside your Makefile with the `%` character, you can refer to the pattern inside the target by using the character sequence `$*`. As an example, here's how you can integrate a wildcard into a rule where you want to create a binary from a given `.c` file:
 
