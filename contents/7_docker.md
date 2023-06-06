@@ -14,7 +14,7 @@ Many developers already know why it makes sense to use Docker for your applicati
 
 Adding GNU Make to the recipe is where some people will fail to see the advantage. You'll hear some asking "Isn't Make an old tool?" or "Isn't it only meant for C and C++ projects?". In reality, this couldn't be farther from the truth. It's correct that Make is a utility developed back in the '70s and '80s, and yes, it's perceived as being tied to C and C++ applications, but that doesn't mean it doesn't have its advantages in other projects.
 
-In the following sections of this article, you'll see just how useful Make can be when integrated into a Docker project. You'll see some of the simple advantages like not having to type out long commands, as well as some more advanced use cases like dynamically created Make targets for different Dockerfiles.
+In the following sections of this chapter, you'll see just how useful Make can be when integrated into a Docker project. You'll see some of the simple advantages like not having to type out long commands, as well as some more advanced use cases like dynamically created Make targets for different Dockerfiles.
 
 ### Integrating Make Into Your Docker Project
 

@@ -6,9 +6,9 @@
 
 In our journey to becoming better software engineers we have learned of various ways in which the team's productivity could be improved. We noticed that a focus on build repeatability and maintainability goes a long way towards keeping the team focused on what really matters: delivering great software. Many of these ideas helped shape what Earthly is today. In fact, the complexity of the matter is what got us to [start Earthly in the first place](https://earthly.dev/blog/the-world-deserves-better-builds/).
 
-I wanted to sit down and write about all the tricks we learned and that we used every day to help make builds more manageable in the absence of Earthly. It's kinda like a "what would you do if you couldn't use Earthly" article. This will hopefully give you some ideas on best practices around build script maintenance, or it might help you decide on whether Earthly is something for you (or if the alternative is preferable).
+I wanted to sit down and write about all the tricks we learned and that we used every day to help make builds more manageable in the absence of Earthly. It's kinda like a "what would you do if you couldn't use Earthly" chapter. This will hopefully give you some ideas on best practices around build script maintenance, or it might help you decide on whether Earthly is something for you (or if the alternative is preferable).
 
-**In this article, we will walk through the 10,000 feet view of your build strategy, then dive into some specific tricks, tools, and techniques you might use to keep your builds effective and reproducible, with other off-the-shelf tools.**
+**In this chapter, we will walk through the 10,000 feet view of your build strategy, then dive into some specific tricks, tools, and techniques you might use to keep your builds effective and reproducible, with other off-the-shelf tools.**
 
 ## Putting Together Complex Builds - Assumptions
 
@@ -25,7 +25,7 @@ Since this is a guide about how not to use Earthly, we'll try to achieve the sam
 
 We will focus primarily on the glue layer of your builds. The stuff that brings everything together - maybe it packages things up for releases, or maybe it prepares packages for deployment, or perhaps it is simply a script that the CI definition calls into.
 
-This is a diagram we sometimes use to describe the glue layer. In this article, we'll be focusing on the Dockerfile, Makefile, and Bash parts of that glue layer. Not having a glue layer can make CI failures difficult to reproduce, or for other teams unfamiliar with the language-specific build tooling to effectively create the right environment to run builds.
+This is a diagram we sometimes use to describe the glue layer. In this chapter, we'll be focusing on the Dockerfile, Makefile, and Bash parts of that glue layer. Not having a glue layer can make CI failures difficult to reproduce, or for other teams unfamiliar with the language-specific build tooling to effectively create the right environment to run builds.
 
 ![The glue layer](./images/6/glue-layer.png)\
 
@@ -460,7 +460,7 @@ Then your engineers will be able to build another team's codebase in their sleep
 
 ## Other Options
 
-This article wouldn't be complete without mentioning that if you're a large organization (thousands of engineers), you can also take a look at some large-scale build systems as popular alternatives to in-house scripts. The names that come to mind are [Bazel](https://bazel.build/), [Buck](https://buck.build/) and [Pants](https://v1.pantsbuild.org/). These systems imply heavy organization buy-in and well-staffed build engineering teams to manage them.
+This book wouldn't be complete without mentioning that if you're a large organization (thousands of engineers), you can also take a look at some large-scale build systems as popular alternatives to in-house scripts. The names that come to mind are [Bazel](https://bazel.build/), [Buck](https://buck.build/) and [Pants](https://v1.pantsbuild.org/). These systems imply heavy organization buy-in and well-staffed build engineering teams to manage them.
 
 Some of these can provide some of the most advanced capabilities available on planet Earth, however, they do come with the tradeoff that they don't integrate well with most open-source tooling and so all projects need to be adapted to fit the paradigm.
 
@@ -470,7 +470,7 @@ If you'd like to get started exploring these, we have previously written about [
 
 ## Parting Words and Mandatory Plug
 
-Getting everyone to write containerized builds is difficult in a growing organization. As you can see from this article, certain operations within containerized builds are not trivial to achieve and the wheel may be reinvented many times across the different teams.
+Getting everyone to write containerized builds is difficult in a growing organization. As you can see from this book, certain operations within containerized builds are not trivial to achieve and the wheel may be reinvented many times across the different teams.
 
 **For these reasons, we have built [Earthly](/).** Through [Earthly](/), we wanted to give containerized builds to the world, for the sake of reproducibility. From our own experience, we saw that Dockerfiles alone are not meant as build scripts, but rather as container image definitions. In true Unix philosophy, they are a great tool for that specific job - they do one thing and they do it well. To go the extra step and have containerized builds scripts (not just image definitions), a number of tricks and wrappers are necessary. [Earthly](/) takes the best ideas from Dockerfiles and Makefiles and puts them into a unified syntax that anyone can understand at-a-glance.
 

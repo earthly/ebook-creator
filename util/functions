@@ -25,3 +25,19 @@ build_book(){
     pdfunite cover.pdf output/output.pdf output/result.pdf
     rm output/output.pdf
 }   
+
+
+file_copy(){
+    # Define the source and target directories
+    src_dir="/Users/adam/sandbox/earthly-website"
+    target_dir="/Users/adam/sandbox/ebook-creator/image"
+
+    # List all the images
+    images=("9NzlT6N.png" "BZHNTkc.png" "RGuT43G.png" "how.jpg" "wildcard.png" "rules.png" "windows.jpg" "chocolatey.png" "Vx2tzwc.png" "ElSKczz.png" "cmake.jpg")
+
+    # For each image
+    for image in ${images[@]}; do
+        # Find the image in the source directory
+        find "$src_dir" -name "$image" -exec cp {} "$target_dir" \;
+    done
+}

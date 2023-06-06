@@ -6,7 +6,7 @@ Building software is a multi-step process—installing or updating dependencies,
 
 The `make` tool automates compilation of the software from the source code. It won't repeat a step if none of its prerequisites has changed, thus saving you time and resources.
 
-In this article, you will learn how to write a simple Makefile and learn about important components of `make`, including variables, pattern rules, and virtual paths. You will also see some examples of using `make` with different technologies.
+In this chapter, you will learn how to write a simple Makefile and learn about important components of `make`, including variables, pattern rules, and virtual paths. You will also see some examples of using `make` with different technologies.
 
 ## The Makefile
 
@@ -231,56 +231,9 @@ But if you create a file called `all` or `clean` in the directory, `make` will g
 
 For the full manual of `make`, read the [`make` documentation](https://www.gnu.org/software/make/manual/make.html).
 
-## Examples of Using `Make`
 
-Here are some tutorials and examples of using `make` for various languages and frameworks.
-
-### [Creating a G++ Makefile](https://earthly.dev/blog/g++-makefile/)
-
-This tutorial shows how to use `make` with `g++` to compile C++. It also introduces variables and phony targets.
-
-### [Creating a Python Makefile](https://earthly.dev/blog/python-makefile/)
-
-This article explains how to use `make` with Python. Even though Python does not require compilation, you can use `make` to automate the installation of dependencies and for testing and managing virtual environments.
-
-### [Creating a Golang Makefile](https://earthly.dev/blog/golang-makefile/)
-
-This tutorial explains using `make` with Golang—including automation for installing dependencies, running tests, and building binaries for different platforms.
-
-### [Makefile Support in Visual Studio Code](https://earthly.dev/blog/vscode-make/)
-
-This tutorial introduces official Makefile support for Visual Studio Code and explains how to install, activate, and configure the extension. The tutorial also demonstrates how to debug and build `make` targets straight from VS Code.
-
-### [Automation With Makefiles](https://monashbioinformaticsplatform.github.io/2017-11-16-open-science-training/topics/automation.html)
-
-This blog post demonstrates using [R Markdown](https://rmarkdown.rstudio.com/) to create web pages from Markdown files in an R project. The post explains how to set up the Makefile and use variables, pattern rules, and phony targets.
-
-### [Using Make With Node.JS](https://lithic.tech/blog/2020-05/makefile-and-node)
-
-In this tutorial, the author has explained the usage of `make` to automate the building, serving, and testing of a Node.js project.
-
-### [Using Make With TypeScript](https://blog.quenk.com/using-gnu-make-to-build-a-typescript-project/)
-
-This article explains the basic mechanisms of `make` and shows how to write a Makefile to transpile TypeScript into JavaScript.
-
-### [Makefiles for Frontend](https://medium.com/finn-no/makefiles-for-frontend-1779be46461b)
-
-This is a tutorial on how to configure `make` for a frontend project. The author explains how to use `make` to automate the compilation of SCSS files and bundle JavaScript with Rollup.
-
-### [Taming Large Makefiles](https://earthly.dev/blog/repeatable-builds-every-time/#tips-for-taming-makefiles-in-large-teams)
-
-Makefiles are hard to scale to large files and large teams. This article has have tips for making this process easier.
-
-### [Makefiles for Java](https://dev.to/deciduously/quick-and-dirty-java-makefile-4njo)
-
-The author demonstrates a simple Makefile that can be used in a Java project for compiling Java files to JAR files.
-
-### [Using Autotools to Configure, Make, and Install a Program](https://earthly.dev/blog/autoconf/)
-
-This tutorial shows how to automate the writing of Makefiles by using Autotools.
-
-## Conclusion
+## Next Up
 
 The `make` tool is a valuable one to master in software development. Using it can speed up your development and ensure an easier process overall. However, due to its feature-rich nature, `make` can be hard to master.
 
-If you're familiar with Docker, consider using [Earthly](https://earthly.dev). Earthly combines the best aspects of `make` and Docker to give you an easy-to-understand and reproducible build with minimal effort.
+In the following chapters we will get you up to speed on make and makefiles.
